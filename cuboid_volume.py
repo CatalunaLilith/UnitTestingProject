@@ -5,5 +5,6 @@ Created on Fri May 28 15:46:31 2021
 @author: catal
 """
 
-def cuboid_volume(l):
-    return (l*l*l)
+
+def cuboid_volume(lenght):
+    return (lenght*lenght*lenght)
