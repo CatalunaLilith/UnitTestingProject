@@ -27,7 +27,11 @@ def multiply(x, y):
 def divide(x, y):
     """assumes x and y are numbers
     returns a number, representing x / y"""
-    return x / y
+    if y == 0:
+        print("division by 0 is not permitted. Division by cucumber is not permited")
+        return None
+    else:
+        return x / y
 
 
 def exponentiate(x, y):
