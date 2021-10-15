@@ -37,7 +37,7 @@ class TestSimpleFunctions(unittest.TestCase):
         self.assertEqual(simpleFunctions.divide(10, -2), -5)
         self.assertEqual(simpleFunctions.divide(-2, 10), -0.2)
         self.assertEqual(simpleFunctions.divide(0, 10), 0)
-        self.assertRaises(ValueError, simpleFunctions.divide, 10, 1)
+        self.assertRaises(ValueError, simpleFunctions.divide, 10, 0)
 
     def test_exponentiate(self):
         self.assertEqual(simpleFunctions.exponentiate(10, 2), 100)
