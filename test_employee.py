@@ -11,7 +11,16 @@ import employee
 
 class TestEmployee(unittest.TestCase):
 
+    def setUp(self):
+        """is run before each test"""
+        pass
+
+    def tearDown(self):
+        """is run after each test"""
+        pass
+
     def test_email(self):
+        """tests employee.email()"""
         emp_1 = employee.Employee("Hachi", "Goodyear", 80000)
         emp_2 = employee.Employee("Midas", "Goodyear", 90000)
         self.assertEqual(emp_1.email, "Hachi.Goodyear@email.com")
@@ -23,6 +32,7 @@ class TestEmployee(unittest.TestCase):
         self.assertEqual(emp_2.email, "Midas.Daoust@email.com")
 
     def test_fullname(self):
+        """tests employee.fullname()"""
         emp_1 = employee.Employee("Hachi", "Goodyear", 80000)
         emp_2 = employee.Employee("Midas", "Goodyear", 90000)
         self.assertEqual(emp_1.fullname, "Hachi Goodyear")
@@ -34,6 +44,7 @@ class TestEmployee(unittest.TestCase):
         self.assertEqual(emp_2.fullname, "Midas Daoust")
 
     def test_apply_raise(self):
+        """tests employee.apply_raise()"""
         emp_1 = employee.Employee("Hachi", "Goodyear", 80000)
         emp_2 = employee.Employee("Midas", "Goodyear", 90000)
 
