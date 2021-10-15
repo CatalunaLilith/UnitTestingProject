@@ -8,8 +8,6 @@ Created on Wed Oct 13 12:32:38 2021
 import unittest
 import simpleFunctions
 
-# print(simpleFunctions.add(1, 2))
-
 
 class TestSimpleFunctions(unittest.TestCase):
 
@@ -51,4 +49,3 @@ class TestSimpleFunctions(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-    print("Kittens")
