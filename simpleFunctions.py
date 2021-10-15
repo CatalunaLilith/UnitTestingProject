@@ -28,8 +28,7 @@ def divide(x, y):
     """assumes x and y are numbers
     returns a number, representing x / y"""
     if y == 0:
-        print("division by 0 is not permitted. Division by cucumber is not permited")
-        return None
+        raise ValueError("division by zero is forbiden")
     else:
         return x / y
 
